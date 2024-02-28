@@ -22,7 +22,7 @@ int main(int, char**){
 
         try{
             game.fishing(sector);
-        }catch(const Item &x){
+        } catch(const Item &x){
             if(x == Item::FISH){
                 std::cout << "Win! You caught a fish in " << game.attempts() << " attemps." << std::endl;
                 fishing = false;
